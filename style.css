@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(35deg, rgb(41, 93, 116), rgb(8, 55, 94));
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 180px;
+    width: 750px;
+    position: absolute;
+    z-index: 1;
+}
+
+.dig-clock {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(8, 55, 94, 0.31);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.design {
+    position: relative;
+    border-radius: 50%;
+    filter: blur(3px);
+}
+
+#ball1 {
+    height: 60px;
+    width: 60px;
+    background-color: crimson;
+    top: -180px;
+    right: 200px;
+    filter: blur(20px);
+}
+
+#ball2 {
+    height: 120px;
+    width: 120px;
+    top: 150px;
+    left: -250px;
+    background-color: darkcyan;
+}
+
+#ball3 {
+    height: 120px;
+    width: 120px;
+    top: -250px;
+    right: 150px;
+    background-color: chocolate;
+}
+
+#ball4 {
+    height: 90px;
+    width: 90px;
+    background-color: rgb(211, 104, 126);
+    top: -250px;
+    right: -300px;
+}
+
+#ball5 {
+    height: 54px;
+    width: 54px;
+    background-color: rgb(96, 25, 105);
+    top: 280px;
+    right: 400px;
+    filter: blur(10px);
+}
+
+#ball6 {
+    height: 80px;
+    width: 90px;
+    background-color: rgb(124, 209, 91);
+    left: 28%;
+    top: 80px;
+}
+
+.design-sqr {
+    position: relative;
+    border-radius: 10px;
+    filter: blur(3px);
+}
+
+#square1 {
+    height: 34px;
+    width: 34px;
+    background-color: rgb(196, 154, 102);
+    top: 250px;
+    left: 70px;
+}
+
+#square2 {
+    height: 90px;
+    width: 70px;
+    background-color: rgb(42, 156, 221);
+    top: -180px;
+    right: -350px;
+}
+
+#square3 {
+    height: 90px;
+    width: 90px;
+    background-color: rgb(31, 151, 57);
+    top: 180px;
+    left: -400px;
+    filter: blur(5px);
+}
+
+#square4 {
+    height: 80px;
+    width: 80px;
+    filter: blur(3px);
+    background-color: rgb(131, 71, 150);
+    border-radius: 8px;
+    position: relative;
+    left: -710px;
+    top: -80px;
+}
+
+.dig-clock span {
+    color: aliceblue;
+    font-size: 74px;
+    width: 110px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+.dig-clock span::after {
+    position: absolute;
+    font-size: 16px;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#hrs::after {
+    content: "HOURS";
+}
+
+#min::after {
+    content: "MINS";
+}
+
+#sec::after {
+    content: "SEC";
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 380px;
+    }
+
+    #ball1 {
+        height: 90px;
+        width: 90px;
+        top: -90px;
+        right: 40px;
+        filter: blur(5px);
+    }
+
+    #ball2 {
+        position: relative;
+        height: 90px;
+        width: 90px;
+        top: 240px;
+        right: 20px;
+    }
+
+    #ball3 {
+        height: 45px;
+        width: 45px;
+        top: 100px;
+        right: 0;
+    }
+
+    #ball4 {
+        height: 22px;
+        width: 22px;
+        right: -120px;
+        top: -40px;
+    }
+
+    #ball5 {
+        height: 80px;
+        width: 80px;
+        top: -190px;
+        left: 160px;
+    }
+
+    #ball6 {
+        height: 40px;
+        width: 40px;
+        top: -290px;
+        left: -160px;
+    }
+
+    #square1 {
+        height: 74px;
+        width: 74px;
+        top: 260px;
+        left: 0px;
+    }
+
+    #square2 {
+        height: 70px;
+        width: 50px;
+        top: -190px;
+        left: -115px;
+    }
+
+    #square3 {
+        height: 28px;
+        width: 18px;
+        top: -90px;
+        left: -120px;
+    }
+
+    #square4 {
+        height: 70px;
+        width: 70px;
+        left: 0px;
+        top: 90px;
+    }
+
+    .dig-clock span {
+        font-size: 44px;
+        width: 90px;
+    }
+
+    .dig-clock span::after {
+        font-size: 14px;
+    }
+}
